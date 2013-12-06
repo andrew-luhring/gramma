@@ -1,8 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 2rem "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+#results{
+    display: flex;
+    width:100%;
+    min-height: 50rem;
+    border: 1px solid #add8e6;
+    flex-direction: column;
+}
+header h1{
+    margin: 4rem auto ;
+    text-align: center;
+    font-size: 3rem;
+}
+output{
+    display: flex;
+    flex:1;
+    border:1px solid black;
 }

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node controller.js"
   },
   "dependencies": {
     "express": "3.4.6",
@@ -11,7 +11,11 @@
     "express-hbs": "~0.5.2",
     "handlebars": "~1.1.2",
     "sass": "~0.5.0",
-    "bourbon": "0.0.2"
+    "bourbon": "0.0.2",
+    "jquery-browserify": "~1.8.1",
+    "browserify": "~2.36.1",
+    "jquery-mousewheel": "~3.1.4",
+    "markdown": "~0.5.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -26,6 +30,15 @@
     "requirejs": "~2.1.9",
     "karma-requirejs": "~0.2.0",
     "karma-phantomjs-launcher": "~0.1.1",
-    "karma": "~0.10.7"
+    "karma": "~0.10.7",
+    "grunt-karma": "~0.6.2",
+    "grunt-mocha": "~0.4.7",
+    "jshint": "~2.3.0",
+    "karma-unicorn-reporter": "~0.1.4",
+    "jquery": "~1.8.3",
+    "expect": "0.0.2",
+    "karma-expect": "~1.0.0",
+    "backbone": "~1.1.0",
+    "karma-handlebars-preprocessor": "~0.1.2"
   }
 }
