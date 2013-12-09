@@ -1,68 +1,35 @@
 
 
 <main class="3col">
+    {{id}}
+    <div>{{page}}</div>
+
     <figure class="top_banner">
         <img src="{{top_banner.src}}" class="full dynamic" alt="banner">
         <figcaption>{{top_banner.figcaption}}</figcaption>
     </figure>
-    <img src="images/splash_d7_v1.png"/>
-    <header id="{{page.id}}" class="page_headline">
-        <h1>{{page.headline}}</h1>
+    <header id="{{id}}" class="page_headline">
+        <h1>{{{headline}}}</h1>
     </header>
 
     {{#each subsections}}
         <section id="{{id}}" class="subsec">
-            <header>
-                <h1>{{headline}}</h1>
-            </header>
-
-            <figure>
+            <figure class="subsec_fig">
                 <img class="subsec" src="{{{figure.src}}}" alt="{{figure.alt}}" />
                 <figcaption>{{figure.caption}}</figcaption>
             </figure>
-            <div class="subsec_txt">
-                {{{text}}}
+	        <div class="subsec_content">
+                <header>
+                    <h1>{{{headline}}}</h1>
+                </header>
+	            <div class="subsec_txt">
+	                {{{text}}}
+	            </div>
+	            {{#each button}}
+	                <button data-action="{{action}}" class="{{class}} , subsec_btn" id="{{id}}" type="{{type}}" >{{text}}</button>
+	            {{/each}}
             </div>
-            {{#each button}}
-                <button data-action="{{action}}" class="{{class}}" id="{{id}}" type="{{type}}" >{{text}}</button>
-            {{/each}}
         </section>
     {{/each}}
 </main>
 
-<script type="text/javascript">
-
-    function Btn(action, cls, id, type, text){
-        this.action = action;
-        this.class = cls;
-        this.id = id;
-        this.type = type;
-        this.text = text;
-    }
-    var genericButton = new Btn("none", "subsection_button", "test", "button", "Action Button");
-    var top_banner = {
-        src : "images/splash_d7_v1.png"
-    ,   figcaption : "This is assuming the banner relates to the article and is not an ad."
-    }
-    var page = {
-        id : "d7v1"
-    ,   headline : "Headline Text"
-    }
-    var generic_subsection = {
-        id : "generic"
-    ,   headline: "Additional Sub-Headline Text"
-    ,   figure: {
-            src : ""
-        ,   alt : "figure alt"
-        ,   caption : "figure caption"
-        }
-    ,   text: "<p> Copy explaining the program. Lorem ipsum dolor sit amet, consectetur adipderp elite, sed do derp a derp incidid unt ut, derpa swaga derp et dolore magna carta jay z.</p>"
-    ,   button: [genericButton]
-    }
-    var subsections = [generic_subsection];
-
-
-
-
-
-</script>

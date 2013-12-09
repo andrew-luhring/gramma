@@ -1,0 +1,130 @@
+@import 'partials/base';
+
+.dynamic{
+	height: auto;
+}
+figure.top_banner{
+	max-width: 660px;
+	position: relative;
+	margin: 0 auto 20px;
+	border: 1px solid black;
+	img.full{
+		display: block;
+		max-width: 660px;
+		margin: 0 auto 20px;
+	}
+	&.rem_ok{
+		margin: 0 auto 2rem;
+		max-width: 66rem;
+	}
+}
+
+
+figure{
+figcaption{
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+	position: absolute;
+	transition: opacity, 1s;
+	opacity: 0;
+}
+&:hover{
+	figcaption{
+		transition: opacity, 1s;
+		opacity: 1;
+		background: white;
+
+	}
+}}
+.page_headline{
+	h1{
+		font-weight: 300;
+		color: $headline_clr;
+		font-size: 40px;
+		text-align:center;
+		&.rem_ok{
+			font-size: 4rem;
+		}
+	}
+}
+.subsec_content{
+
+	width: calc(100% - 210px);
+	&.rem_ok{
+		width: calc(100% - 21rem);
+	}
+	 >header h1{
+		font-size: 30px;
+		color:$green;
+		&.rem_ok{
+			font-size: 3rem;
+		}
+	}
+}
+img{
+	@include radial-gradient(#fff2b2, #ccc);
+
+}
+section.subsec{
+	font-size:1.6rem;
+}
+.flexbox section.subsec{
+	display: flex;
+	&:nth-child(odd){
+		flex-direction:row-reverse;
+	}
+	&:nth-child(even){
+		flex-direction:row;
+	}
+}
+.subsec_txt{
+	padding: 20px;
+}
+.no-flexbox{
+	section.subsec
+	&:nth-child(odd){
+		.subsec_fig{
+			float:left;
+		}
+		.subsec_content{
+			float:right;
+		}
+	}
+	&:nth-child(even){
+		.subsec_fig{
+			float:right;
+		}
+		.subsec_content{
+			float:left;
+		}
+	}
+}
+.subsec_fig{
+	position:relative;
+	width: 207px;
+	img{
+		width: 207px;
+		//temporary:
+		height: 207px;
+	}
+	&.rem_ok{
+		width: 20.7rem;
+	}
+}
+.subsec_btn{
+	@include cf;
+}
+#generic{
+
+}
+
+
+
+footer{
+
+	font-size:12px;
+}
+
+
+/*# sourceMappingURL=style.css.map */

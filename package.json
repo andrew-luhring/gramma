@@ -15,7 +15,8 @@
     "jquery-browserify": "~1.8.1",
     "browserify": "~2.36.1",
     "jquery-mousewheel": "~3.1.4",
-    "markdown": "~0.5.0"
+    "markdown": "~0.5.0",
+    "livereload": "~0.3.2"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -39,6 +40,7 @@
     "expect": "0.0.2",
     "karma-expect": "~1.0.0",
     "backbone": "~1.1.0",
-    "karma-handlebars-preprocessor": "~0.1.2"
+    "karma-handlebars-preprocessor": "~0.1.2",
+    "karma-coverage": "~0.1.4"
   }
 }

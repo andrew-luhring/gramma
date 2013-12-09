@@ -18,7 +18,7 @@ module.exports = function(config) {
 	    '**/*_ignore.js*'
     ],
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress', 'unicorn'],
+    reporters: ['progress', 'unicorn' , 'coverage'],
     port: 9876,
     colors: true,
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG

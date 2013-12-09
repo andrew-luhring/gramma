@@ -28,7 +28,8 @@
     describe('testing if', function(){
        it("exists", function(){
 	       quietMode(quietModeIsOn, "swag");
-	       expect().fail();
+	       //expect().fail();
+
        });
     });
 	})();
