@@ -3,14 +3,13 @@
 
 module.exports = function(config) {
   config.set({
-
     basePath: './',
     frameworks: ['mocha', 'expect'],
     plugins: ['karma-*'],
       files: [
 	      "public/stylesheets/style.css",
 	      "public/javascripts/lib/jquery.js",
-	      "public/tests/_vipEci.js",
+	      "public/tests/_tests.js",
 	      "public/javascripts/script.js"
       ],
     exclude: [
@@ -27,7 +26,6 @@ module.exports = function(config) {
     // - Chrome, PhantomJS
     browsers: [],
     captureTimeout: 60000,
-
     singleRun: false
   });
 };

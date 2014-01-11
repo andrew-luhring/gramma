@@ -1,0 +1,62 @@
+{
+	"sections": [
+		{
+			"id" : "animals"
+			,   "gallery": [
+				"Leopard.jpg"
+				, "Lion.jpg"
+				, "Sassy Dog.jpg"
+				, "Swan Family.jpg"
+				, "Swan.jpg"
+				, "Zebra.jpg"
+			]
+		} , {
+			"id" : "chicago"
+		,   "gallery": [
+				"chicagoflower.jpg"
+				, "ladyinredhat.jpg"
+			]
+		} ,
+		{
+			"id" :  "fancyladies"
+			,	"gallery" : [
+				"Cherie.jpg"
+			]
+		} ,
+		{
+			"id" : "flowers"
+		,	"gallery" : [
+				"breezywaterlily.jpg"
+				, "cactus.jpg"
+				, "daffodil.jpg"
+				, "iris2.jpg"
+				, "iriswhite.jpg"
+				, "lilycoloredborder.jpg"
+				, "orangehibiscus.jpg"
+				, "orchidpink.jpg"
+				, "redtulipsabstract.jpg"
+				, "redtulipswindmill.jpg"
+				, "sunflower.jpg"
+			]
+		} ,
+		{
+			"id" :"religious"
+		,	"gallery" : [
+				"gethsemanefence.jpg"
+				, "jerusalemeastgate.jpg"
+				, "lordsupper.jpg"
+			]
+		} ,
+		{
+			"id" : "landscapes"
+		,   "gallery" :  ["bridgefallscene.jpg"
+				, "cattailstallgrass.jpg"
+				, "wheatfields.jpg"
+			]
+		} ,
+		{
+			"id" : "portraits"
+		,   "gallery" : ["chessplayer.jpg"]
+		}
+	]
+}

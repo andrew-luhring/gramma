@@ -12,7 +12,30 @@
 <noscript>
 	<header><h1>This site is intended to be viewed with JavaScript enabled; please check that your browser settings have JavaScript enabled.</h1></header>
 </noscript>
-{{> index}}
+
+<header>
+	<h1>Judy A. Downey</h1>
+</header>
+<nav role="navigation" class="meta">
+	{{#each sections}}
+		<li><a href="#{{{id}}}" class="nav">{{{id}}}</a> </li>
+	{{/each}}
+</nav>
+
+<main role="main">
+
+	{{#each sections}}
+        <section id="{{{id}}}">
+	        {{#each gallery}}
+		        <img src="/images/gallery/{{ ../id }}/{{{this}}}" />
+
+	        {{/each}}
+
+        </section>
+	{{/each}}
+
+
+</main>
 
 
 <footer>
